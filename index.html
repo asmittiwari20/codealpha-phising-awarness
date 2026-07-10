@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard | Phishing Awareness Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="PhishGuard Home">
+        <span class="logo-icon" aria-hidden="true">🪝</span>
+        <span class="logo-text">Phish<span class="accent">Guard</span></span>
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#what-is-phishing" class="nav-link">Overview</a></li>
+          <li><a href="#types" class="nav-link">Attack Vectors</a></li>
+          <li><a href="#recognize" class="nav-link">Spotting Red Flags</a></li>
+          <li><a href="#fake-sites" class="nav-link">Web Indicators</a></li>
+          <li><a href="#social-engineering" class="nav-link">Psychology</a></li>
+          <li><a href="#prevention" class="nav-link">Defense</a></li>
+          <li><a href="#examples" class="nav-link">Case Studies</a></li>
+          <li><a href="#quiz" class="btn btn-cta">Take the Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="home" class="hero-section">
+    <div class="hero-grid-overlay"></div>
+    <div class="container hero-container">
+      
+      <div class="hero-content">
+        <p class="eyebrow-tag">// Cybersecurity Training Suite</p>
+        <h1 class="hero-title">
+          One single click.<br>
+          Spot the hook <span class="accent-text">before it sets.</span>
+        </h1>
+        <p class="hero-description">
+          Phishing is the absolute primary entry point for modern cyber threats. Attackers don't bypass security code; they compromise human psychology through artificial urgency and misdirection. Learn to identify the bait and secure your data ecosystem.
+        </p>
+        <div class="hero-actions">
+          <a href="#what-is-phishing" class="btn btn-primary">Begin Training</a>
+          <a href="#quiz" class="btn btn-secondary">Test Your Awareness</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">3.4B</span>
+            <span class="stat-desc">Malicious emails sent daily</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">90%</span>
+            <span class="stat-desc">Of corporate breaches start here</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">1 in 4</span>
+            <span class="stat-desc">Users interact with fraudulent links</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-interactive" aria-hidden="true">
+        <div class="email-mockup-window">
+          <div class="window-controls">
+            <span class="control-dot close"></span>
+            <span class="control-dot minimize"></span>
+            <span class="control-dot maximize"></span>
+          </div>
+          <div class="email-metadata">
+            <div class="meta-field"><strong>From:</strong> <span class="spoof-text">security-alert@paypa1-support.com</span></div>
+            <div class="meta-field"><strong>Subject:</strong> <span class="urgency-text">⚠ Immediate Action Required: Account Suspension Warning</span></div>
+          </div>
+          <div class="email-content">
+            <p>Dear Customer,</p>
+            <p>We identified anomalous activity related to your credentials. Access privileges will be 
+              <span class="interactive-flag" data-tooltip="Psychological Attack Vector: Artificial Urgency & Fear">permanently suspended within 24 hours</span> 
+              unless security validation is performed instantly.
+            </p>
+            <p><a href="#quiz" class="mock-link" data-tooltip="Technical Indicator: Lookalike Spoofed Domain Path">Click Here to Verify Identity</a></p>
+            <p class="sign-off">Regards,<br>Global Security Infrastructure Operations</p>
+          </div>
+        </div>
+        <p class="interactive-hint">Hover highlighted elements to dissect the attack indicators</p>
+      </div>
+
+    </div>
+  </section>
+  <main class="main-content">
+
+    <!-- 01 · WHAT IS PHISHING -->
+    <section id="what-is-phishing" class="training-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">01 · Threat Profiles</span>
+          <h2>Understanding Phishing Mechanics</h2>
+        </div>
+        <div class="layout-grid-2">
+          <div class="content-card plain-text">
+            <p><strong>Phishing</strong> is a sophisticated engineering method where malicious parties masquerade as trusted entities—such as banking platforms, internal executives, or cloud providers—to deceive users into surrendering vital system credentials, authentication codes, or financial parameters.</p>
+            <p>The paradigm leverages human behavior instead of system vulnerabilities. Rather than breaking through cryptographic perimeters, attackers exploit cognitive compliance models like trust, compliance, and urgency to compromise nodes from the inside out.</p>
+          </div>
+          <div class="content-card highlight-card">
+            <h3>Why Human Targets Bite</h3>
+            <ul class="feature-list">
+              <li><strong>Brand Replication:</strong> Near-perfect alignment with target corporate styles.</li>
+              <li><strong>Temporal Crises:</strong> Forcing fast, unverified execution via short window deadlines.</li>
+              <li><strong>Emotional Exploitation:</strong> Relying heavily on fear of operational or personal loss.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="types" class="training-section section-shaded">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">02 · Attack Vectors</span>
+          <h2>Primary Vector Classifications</h2>
+        </div>
+        <div class="layout-grid-4">
+          <div class="vector-card">
+            <div class="vector-icon" role="img" aria-label="Email icon">📧</div>
+            <h3>Bulk Email</h3>
+            <p>High-volume automated operations mimicking standard service vendors to catch unobservant targets.</p>
+          </div>
+          <div class="vector-card">
+            <div class="vector-icon" role="img" aria-label="Target icon">🎯</div>
+            <h3>Spear Phishing</h3>
+            <p>Highly targeted recon-driven attacks customized for specific organizational roles or single profiles.</p>
+          </div>
+          <div class="vector-card">
+            <div class="vector-icon" role="img" aria-label="Mobile phone icon">📱</div>
+            <h3>Smishing</h3>
+            <p>SMS/text text-based vectors utilizing tracking alerts, delivery issues, or account warnings with shortlinks.</p>
+          </div>
+          <div class="vector-card">
+            <div class="vector-icon" role="img" aria-label="Telephone icon">☎️</div>
+            <h3>Vishing</h3>
+            <p>Voice manipulations where threat actors call to impersonate helpdesks, fraud teams, or regulatory bodies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="recognize" class="training-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">03 · Indicators</span>
+          <h2>Detecting Mail Corruptions</h2>
+        </div>
+        <div class="layout-grid-2">
+          <div class="content-card standard-padding">
+            <h3>🚩 Common Red Flags</h3>
+            <ul class="danger-list">
+              <li>Vague generic context (e.g., "Dear Valued User") instead of clean directory metrics.</li>
+              <li>Slight variations in top-level domains or domain configurations.</li>
+              <li>Requests asking you to bypass explicit internal processes.</li>
+              <li>Unsolicited or unexpected file payloads, archives, or macro documents.</li>
+            </ul>
+          </div>
+          <div class="content-card email-preview-card">
+            <h3>Dissected Phishing Schema</h3>
+            <div class="email-mockup-static">
+              <div class="static-row"><span class="meta-tag">From:</span> Amaz0n-Rewards@delivery-notice.info <span class="indicator-badge danger">Lookalike Domain</span></div>
+              <div class="static-row"><span class="meta-tag">Subject:</span> High Value Notice: Claim Prize Allocations <span class="indicator-badge caution">Unrealistic Incentives</span></div>
+              <div class="static-body">
+                <p>Dear Valued User, <span class="indicator-badge alert">Impersonal Greeting</span></p>
+                <p>System configurations have selected your profile. Access the node <u>here</u> before shift end to secure payout authorization. <span class="indicator-badge urgent">Urgency Stressor</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fake-sites" class="training-section section-shaded">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">04 · Validation</span>
+          <h2>Identifying Counterfeit Web Infrastructure</h2>
+        </div>
+        <div class="layout-grid-3">
+          <div class="info-block">
+            <div class="block-head"><h3>🔗 Domain Manipulation</h3></div>
+            <p>Attackers use character swaps (typosquatting) or subdomains like <code>login.com.external-domain.ru</code>. Check structural hierarchies right before the root directory slash.</p>
+          </div>
+          <div class="info-block">
+            <div class="block-head"><h3>🔒 SSL / HTTPS Misconceptions</h3></div>
+            <p>An active TLS lock icon ensures cryptographic transit safety, not origin reliability. Malicious landing environments frequently host valid certificates.</p>
+          </div>
+          <div class="info-block">
+            <div class="block-head"><h3>🎨 Component Inconsistencies</h3></div>
+            <p>Analyze interface components for low-res visuals, non-functional secondary links, stale copyrights, and abnormal authentication dialog layouts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="social-engineering" class="training-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">05 · Behavioral Patterns</span>
+          <h2>Exploited Human Heuristics</h2>
+        </div>
+        <div class="layout-grid-4">
+          <div class="heuristic-card">
+            <div class="card-num">01</div>
+            <h3>Urgency</h3>
+            <p>Artificially accelerating execution time frames to effectively bypass conscious analytical review channels.</p>
+          </div>
+          <div class="heuristic-card">
+            <div class="card-num">02</div>
+            <h3>Intimidation</h3>
+            <p>Simulating structural authorities or security compliance threats to force unvetted protocol responses.</p>
+          </div>
+          <div class="heuristic-card">
+            <div class="card-num">03</div>
+            <h3>Social Proof</h3>
+            <p>Leveraging fake cross-department interactions or collaborative contexts to instantly establish behavioral trust.</p>
+          </div>
+          <div class="heuristic-card">
+            <div class="card-num">04</div>
+            <h3>Scarcity / Incentive</h3>
+            <p>Presenting exceptional conditions or exclusive rewards to override normal risk verification procedures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="prevention" class="training-section section-shaded">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">06 · Incident Mitigation</span>
+          <h2>Hardening Defenses & Response Protocol</h2>
+        </div>
+        <div class="layout-grid-2">
+          <div class="content-card baseline-card">
+            <ul class="remediation-steps">
+              <li>Enforce multi-tier password differentiation across external and internal networks.</li>
+              <li>Mandate out-of-band token configurations or physical hardware 2FA keys.</li>
+              <li>Manually type resource location paths instead of interacting directly with embedded elements.</li>
+              <li>Validate internal operational alterations using verified out-of-band communication steps.</li>
+              <li>Instantly pass suspect records to internal security analysts or your IT team.</li>
+            </ul>
+          </div>
+          <div class="content-card structural-callout">
+            <h3>Operational Rule:</h3>
+            <p>Legitimate administrative nodes or financial clearhouses will never demand raw account parameters, secret phrases, or temporary tokens via asynchronous unauthenticated text pipelines.</p>
+            <blockquote class="doctrine-quote">
+              <strong>Core Defensive Heuristic:</strong> If an email instigates sudden panic or operational bypassing—stop instantly. The emotional friction generated is the precise payload signature.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="examples" class="training-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">07 · Empirical Evidence</span>
+          <h2>Historical Vector Scenarios</h2>
+        </div>
+        <div class="layout-grid-3">
+          <div class="case-card">
+            <span class="case-badge">Financial</span>
+            <h3>Spoofed Institution Alerts</h3>
+            <p>Users accept a critical data modification alert, routing down an optimized cloned ledger dashboard where assets are drained instantly.</p>
+          </div>
+          <div class="case-card">
+            <span class="case-badge">Authentication</span>
+            <h3>Token Redirection Interception</h3>
+            <p>Malicious actors initiate structural multi-factor prompts, contacting users directly via phone to harvest passing operational tokens under false helpdesk pretenses.</p>
+          </div>
+          <div class="case-card">
+            <span class="case-badge">Corporate</span>
+            <h3>Business Email Compromise</h3>
+            <p>Threat actors mirror high-level vendor conversations to submit alternate banking coordinates for high-value corporate invoice clearings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="quiz" class="training-section section-shaded assessment-area">
+      <div class="container small-container">
+        <div class="section-header center-align">
+          <span class="section-index">08 · Validation Stage</span>
+          <h2>Knowledge Assessment</h2>
+          <p class="section-subtitle">Process the mock environments below to evaluate threat detection accuracy indices.</p>
+        </div>
+
+        <div id="quizContainer" class="quiz-wrapper">
+        </div>
+
+        <div id="quizResult" class="results-panel hidden">
+          <h3>Performance Metric Summary: <span id="scoreText">0/0</span></h3>
+          <p id="scoreMsg"></p>
+          <button id="retryBtn" class="btn btn-primary">Reset Assessment Matrix</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; PhishGuard Open-Source Training Sandbox. This ecosystem remains simulated for education frameworks.</p>
+      <p class="footer-sub-tag">Maintain continuous verification profiles. Shield your parameters. 🛡️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
